@@ -121,7 +121,7 @@ ul{
         <script>
              popu='';
  for( var i=0; i< pel.tv_shows.length; i++){
-     popu+=`<div class='popu'><img src='assets/img/load.gif' data-src='https://static.episodate.com/images/tv-show/full/${pel.tv_shows[i].id}.jpg' onerror='this.src="img/4.png"' class='full lazyload'></div>`
+     popu+=`<div class='popu'><img src='https://static.episodate.com/images/tv-show/full/${pel.tv_shows[i].id}.jpg' onerror='this.src="img/4.png"' class='full lazyload'></div>`
  }   
      po.innerHTML=`<div class='title'> </div><div class='free'> <div class='window' style='width:${100*pel.tv_shows.length}px'>${popu}</div> </div>`
 
