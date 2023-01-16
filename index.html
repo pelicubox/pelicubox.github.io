@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <title>PelicuBox for AlvaroRB</title>
+
+        <meta name=”Description” content=”alvaro rojas desarrollador de aplicaciones android ; aplicación de películas ”/>
+        <meta name=”Keywords” content=”alvaro rojas, alvarorb, pelicubox, catálogo ,  cuba, apk, apklis”/>
+        <meta name=”Language” content=”Spanish”/>
+        <meta name=”robots” content=”index,follow,all”/>
+        <meta name="google-site-verification" content="gnyfIkmc857RMD8PWOagzhRAk5EvzNm_i1ulzmugLnw" />
+        
+        <meta charset='UTF-8'>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
+       <script src='assets/json.json'></script>
+        <style>
+html,body,#app,.full {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: auto;
+    padding: 0px;
+    margin: 0px;
+}
+.free{width:100%;float:left;overflow:auto}
+* { box-sizing: border-box;}
+body {
+    background: #000;
+    color: #fff
+}
+.barTop span{
+    font-size:18px;
+    font-weight:300;
+    float:left;
+}
+.barTop img{
+    width:60px;
+    height:60px;
+    float:left;
+}
+.barTop{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:3;
+    box-shadow:0px 0px 4px #dcdcdc;
+    width:100%;
+    padding:5px;
+    font-size:35px;
+    font-weight:900;
+    line-heigth:1em;
+    background:#000;
+}
+#full{
+    padding:80px 5px 60px 5px;
+    text-align:center;
+    font-size:22px;
+}
+ul{
+    text-align:left;
+}
+.popu{
+    width:96px;
+    margin:2px;
+    border-radius:4px;
+    height:150px;
+    float:left;
+    overflow:hidden;
+}
+.dow{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    z-index:3;
+    margin:2% 5%;
+    background:#00d938;
+    border-radius:10px;
+    text-align:center;
+    padding:10px;
+    float:right;
+    font-weight:900;
+}
+.footer{
+    font-size:29px;
+    font-weight:100;
+}
+.footer img{
+    width:20px;
+    height:20px;
+    border-radius:15px;
+    border:solid 1px #fff;
+}
+        </style>
+    </head>
+    <body>
+        <div class='barTop'>
+           <img src="assets/img/apk.png" alt=""> PelicuBox</br><span>Catálogo gratis</span>
+        </div>
+        <div id='full' class='full'>
+            <div class='free'>
+                <img src="assets/img/pelicubox-alvaro-rojas.png" class='free lazyload' alt="Portadas">
+                <b>PelicuBox</b>
+                es una aplicación en desarrollo, que hace uso de grandes bases de datos, con información de películas y series de productoras como Netflix, HBO, BBC y otras muchas para ponerlas a su disposición.
+            </div>
+            <div id='po' class="free"></div>
+            <div class='free'>
+                <ul>
+                    <li>Lanzada 15 enero 2023</li>
+                    <li>SO Android</li>
+                    <li>Size 200Kb</li>                    
+                    <li>Caché Disponible sin conexión</li>                    
+                </ul>
+            </div>
+            <div class="footer">
+                creada por: <b>alvar<img src="assets/img/alvaro-rojas.png">rb</b>
+            </div>
+        </div>
+        <a href="assets/apk.apk"> <div class='dow'>Descargar</div></a> 
+        
+        <script src='assets/img.js'></script>
+        <script>
+             popu='';
+ for( var i=0; i< pel.tv_shows.length; i++){
+     popu+=`<div class='popu'><img src='https://static.episodate.com/images/tv-show/full/${pel.tv_shows[i].id}.jpg' onerror='this.src="img/4.png"' class='full lazyload'></div>`
+ }   
+     po.innerHTML=`<div class='title'> </div><div class='free'> <div class='window' style='width:${100*pel.tv_shows.length}px'>${popu}</div> </div>`
+
+ lazyload();            
+        </script>
+    </body>
+    <script>
+    </script>
+</html>
