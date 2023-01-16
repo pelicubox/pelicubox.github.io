@@ -12,7 +12,7 @@
         
         <meta charset='UTF-8'>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
-       <script src='img/json.json'></script>
+       <script src='assets/img/json.json'></script>
         <style>
 html,body,#app,.full {
     width: 100%;
@@ -94,11 +94,11 @@ ul{
     </head>
     <body>
         <div class='barTop'>
-           <img src="img/apk.png" alt=""> PelicuBox</br><span>Catálogo gratis</span>
+           <img src="assets/img/apk.png" alt=""> PelicuBox</br><span>Catálogo gratis</span>
         </div>
         <div id='full' class='full'>
             <div class='free'>
-                <img src="img/pelicubox-alvaro-rojas.png" class='free lazyload' alt="Portadas">
+                <img src="assets/img/pelicubox-alvaro-rojas.png" class='free lazyload' alt="Portadas">
                 <b>PelicuBox</b>
                 es una aplicación en desarrollo, que hace uso de grandes bases de datos, con información de películas y series de productoras como Netflix, HBO, BBC y otras muchas para ponerlas a su disposición.
             </div>
@@ -117,11 +117,11 @@ ul{
         </div>
         <a href=""> <div class='dow'>Descargar</div></a> 
         
-        <script src='img.js'></script>
+        <script src='assets/img.js'></script>
         <script>
              popu='';
  for( var i=0; i< pel.tv_shows.length; i++){
-     popu+=`<div class='popu'><img src='img/load.gif' data-src='https://static.episodate.com/images/tv-show/full/${pel.tv_shows[i].id}.jpg' onerror='this.src="img/4.png"' class='full lazyload'></div>`
+     popu+=`<div class='popu'><img src='assets/img/load.gif' data-src='https://static.episodate.com/images/tv-show/full/${pel.tv_shows[i].id}.jpg' onerror='this.src="img/4.png"' class='full lazyload'></div>`
  }   
      po.innerHTML=`<div class='title'> </div><div class='free'> <div class='window' style='width:${100*pel.tv_shows.length}px'>${popu}</div> </div>`
 
